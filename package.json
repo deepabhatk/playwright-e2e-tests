@@ -11,7 +11,10 @@
   "author": "Deepa Bhat",
   "type": "commonjs",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "demo": "npx playwright test tests/demo/mytest.spec.ts --headed",
+    "demo:firefox": "npx playwright test tests/demo/mytest.spec.ts --headed project=firefox"
+  },
   "devDependencies": {
     "@playwright/test": "^1.61.0",
     "@types/node": "^25.9.3"
