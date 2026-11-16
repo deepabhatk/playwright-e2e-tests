@@ -1,4 +1,7 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, devices } from "@playwright/test";
+import constants from "../../data/constants.json";
+import { log } from "../helpers/logger";
+
 //1 .Go to the home page"https://katalon-demo-cura.herokuapp.com/""
 //Assert if title is correct
 //Assert if header is correct
@@ -48,7 +51,7 @@ await expect(page.locator('h2')).toContainText('Make Appointment');
 
 });
 
-test.only("Should do something", async ({page}) =>{
+test("Should do something", async ({page}) =>{
 await page.goto('https://katalon-demo-cura.herokuapp.com/'); //returns Promise<Response>
 
 let makeAppointment = page.getByRole( "link", { name: "Make Appointment"});
@@ -58,4 +61,39 @@ await expect(page.getByText("Please login to make")).toBeVisible();//Returns Pro
 await page.getByRole('heading', { name: 'We Care About Your Health' }).click();
 });
 
+test("Should demo  devices", async ({page}, testInfo) =>{
+console.log(` >> The lis of devices : ${Object.keys(devices)}`);
+});
+
+test("Should demo parallel run 1", {tag: '@demo'} ,async ({page}, testInfo) =>{
+await page.goto('https://www.google.com')
+});
+test("Should demo parallel run 2", {tag: '@demo'} ,async ({page}, testInfo) =>{
+await page.goto('https://www.google.com')
+});
+test("Should demo constant data"  ,async ({page}, testInfo) =>{
+ console.log(`>> Constant Datas: ${JSON.stringify(constants.STATUSCODES)}`);
+});
+
+test.only("Should demo a click action"  ,async ({page}, testInfo) =>{
+   
+  
+  //Default actions 
+  // 
+//   await page.goto('https://katalon-demo-cura.herokuapp.com/');
+//   let ele = page.getByRole('link', { name: 'Make Appointment' });
+//  await ele.click();
+
+ //Base Page action
+   await page.goto('https://katalon-demo-cura.herokuapp.com/');
+  let element = page.getByRole('link', { name: 'Make Appointment' });
+       try {
+                await expect(element).toBeVisible({ timeout: 10_000 });   
+                await element.click();
+                await log("info", `>> Clicked on element: ${element}`);
+            } catch (error) {
+                await log("error", `>> Failed to click on element: ${element.toString()}, original error: ${error}`);
+                throw error;
+            }
+});
 });

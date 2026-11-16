@@ -1,0 +1,326 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - 'link "The Internet: home" [ref=e3] [cursor=pointer]':
+    - /url: /
+    - text: The Internet powered by Sauce Labs
+  - region "Messages" [ref=e5]
+  - main [ref=e7]:
+    - heading "Welcome to the-internet" [level=1] [ref=e8]
+    - heading "Available Examples" [level=2] [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11] [cursor=pointer]: Filter examples
+      - searchbox "Filter examples" [ref=e12]
+    - list [ref=e13]:
+      - listitem "A/B Testing - Content that changes between visits" [ref=e14]:
+        - link "A/B Testing" [ref=e15] [cursor=pointer]:
+          - /url: /abtest
+        - text: Content that changes between visits
+      - listitem "Accessibility Issues - A page with known accessibility problems for scanners like axe / and a fixed version" [ref=e16]:
+        - link "Accessibility Issues" [ref=e17] [cursor=pointer]:
+          - /url: /accessibility_issues
+        - text: A page with known accessibility problems for scanners like axe / and a fixed version
+      - listitem "Add/Remove Elements - Buttons that add and delete elements" [ref=e18]:
+        - link "Add/Remove Elements" [ref=e19] [cursor=pointer]:
+          - /url: /add_remove_elements/
+        - text: Buttons that add and delete elements
+      - listitem "Advanced Iframes - A sandboxed (cross-origin) iframe / srcdoc / an iframe inside shadow DOM" [ref=e20]:
+        - link "Advanced Iframes" [ref=e21] [cursor=pointer]:
+          - /url: /iframes_advanced
+        - text: A sandboxed (cross-origin) iframe / srcdoc / an iframe inside shadow DOM
+      - listitem "Advanced Shadow DOM - Nested and closed shadow roots / slots / a custom form field" [ref=e22]:
+        - link "Advanced Shadow DOM" [ref=e23] [cursor=pointer]:
+          - /url: /shadowdom_advanced
+        - text: Nested and closed shadow roots / slots / a custom form field
+      - listitem "Autocomplete - A search box with suggestions from the server that you pick with the keyboard" [ref=e24]:
+        - link "Autocomplete" [ref=e25] [cursor=pointer]:
+          - /url: /autocomplete
+        - text: A search box with suggestions from the server that you pick with the keyboard
+      - 'listitem "Basic Auth (user and pass: admin) - Log in through the browser''s basic auth prompt" [ref=e26]':
+        - link "Basic Auth" [ref=e27] [cursor=pointer]:
+          - /url: /basic_auth
+        - text: "(user and pass: admin) Log in through the browser's basic auth prompt"
+      - listitem "Broken Images - Images that fail to load" [ref=e28]:
+        - link "Broken Images" [ref=e29] [cursor=pointer]:
+          - /url: /broken_images
+        - text: Images that fail to load
+      - listitem "Browser Permissions - Ask for notifications / clipboard and camera access and see each permission's state" [ref=e30]:
+        - link "Browser Permissions" [ref=e31] [cursor=pointer]:
+          - /url: /permissions
+        - text: Ask for notifications / clipboard and camera access and see each permission's state
+      - listitem "Canvas - Click and type into a canvas" [ref=e32]:
+        - link "Canvas" [ref=e33] [cursor=pointer]:
+          - /url: /canvas
+        - text: Click and type into a canvas
+      - listitem "Challenging DOM - Elements without useful ids and a canvas" [ref=e34]:
+        - link "Challenging DOM" [ref=e35] [cursor=pointer]:
+          - /url: /challenging_dom
+        - text: Elements without useful ids and a canvas
+      - 'listitem "Chat - A chat where users in the same room see each other''s messages: test with two browsers at once" [ref=e36]':
+        - link "Chat" [ref=e37] [cursor=pointer]:
+          - /url: /chat
+        - text: "A chat where users in the same room see each other's messages: test with two browsers at once"
+      - listitem "Checkboxes - Check and uncheck boxes" [ref=e38]:
+        - link "Checkboxes" [ref=e39] [cursor=pointer]:
+          - /url: /checkboxes
+        - text: Check and uncheck boxes
+      - listitem "Context Menu - Right-click to open an alert" [ref=e40]:
+        - link "Context Menu" [ref=e41] [cursor=pointer]:
+          - /url: /context_menu
+        - text: Right-click to open an alert
+      - listitem "Cookie Consent - A cookie banner that comes back until you accept / reject or pick cookies" [ref=e42]:
+        - link "Cookie Consent" [ref=e43] [cursor=pointer]:
+          - /url: /cookie_consent
+        - text: A cookie banner that comes back until you accept / reject or pick cookies
+      - listitem "Custom Dropdown - A select list built from divs with ARIA roles instead of <select>" [ref=e44]:
+        - link "Custom Dropdown" [ref=e45] [cursor=pointer]:
+          - /url: /custom_dropdown
+        - text: A select list built from divs with ARIA roles instead of <select>
+      - listitem "Date & Time Pickers - Native date and time inputs and a calendar widget built with JavaScript" [ref=e46]:
+        - link "Date & Time Pickers" [ref=e47] [cursor=pointer]:
+          - /url: /date_pickers
+        - text: Native date and time inputs and a calendar widget built with JavaScript
+      - 'listitem "Digest Authentication (user and pass: admin) - Log in through the browser''s digest auth prompt" [ref=e48]':
+        - link "Digest Authentication" [ref=e49] [cursor=pointer]:
+          - /url: /digest_auth
+        - text: "(user and pass: admin) Log in through the browser's digest auth prompt"
+      - listitem "Disappearing Elements - Menu items that come and go" [ref=e50]:
+        - link "Disappearing Elements" [ref=e51] [cursor=pointer]:
+          - /url: /disappearing_elements
+        - text: Menu items that come and go
+      - listitem "Drag and Drop - Swap two boxes with HTML5 drag and drop" [ref=e52]:
+        - link "Drag and Drop" [ref=e53] [cursor=pointer]:
+          - /url: /drag_and_drop
+        - text: Swap two boxes with HTML5 drag and drop
+      - listitem "Dropdown - Pick an option from a select list" [ref=e54]:
+        - link "Dropdown" [ref=e55] [cursor=pointer]:
+          - /url: /dropdown
+        - text: Pick an option from a select list
+      - listitem "Dynamic Content - Text and images that change on reload" [ref=e56]:
+        - link "Dynamic Content" [ref=e57] [cursor=pointer]:
+          - /url: /dynamic_content
+        - text: Text and images that change on reload
+      - listitem "Dynamic Controls - Elements that get added / removed / enabled / disabled" [ref=e58]:
+        - link "Dynamic Controls" [ref=e59] [cursor=pointer]:
+          - /url: /dynamic_controls
+        - text: Elements that get added / removed / enabled / disabled
+      - listitem "Dynamic Loading - Elements that appear after a delay" [ref=e60]:
+        - link "Dynamic Loading" [ref=e61] [cursor=pointer]:
+          - /url: /dynamic_loading
+        - text: Elements that appear after a delay
+      - listitem "Entry Ad - A modal ad that opens on page load" [ref=e62]:
+        - link "Entry Ad" [ref=e63] [cursor=pointer]:
+          - /url: /entry_ad
+        - text: A modal ad that opens on page load
+      - listitem "Exit Intent - A modal that opens when the mouse leaves the page" [ref=e64]:
+        - link "Exit Intent" [ref=e65] [cursor=pointer]:
+          - /url: /exit_intent
+        - text: A modal that opens when the mouse leaves the page
+      - listitem "File Download - Download files from a list of links" [ref=e66]:
+        - link "File Download" [ref=e67] [cursor=pointer]:
+          - /url: /download
+        - text: Download files from a list of links
+      - listitem "File Upload - Upload a file with a file input or drag and drop" [ref=e68]:
+        - link "File Upload" [ref=e69] [cursor=pointer]:
+          - /url: /upload
+        - text: Upload a file with a file input or drag and drop
+      - listitem "Floating Menu - A menu that stays in view while you scroll" [ref=e70]:
+        - link "Floating Menu" [ref=e71] [cursor=pointer]:
+          - /url: /floating_menu
+        - text: A menu that stays in view while you scroll
+      - listitem "Forgot Password - A form that sends an email" [ref=e72]:
+        - link "Forgot Password" [ref=e73] [cursor=pointer]:
+          - /url: /forgot_password
+        - text: A form that sends an email
+      - listitem "Form Authentication - Log in and out of a secure area" [ref=e74]:
+        - link "Form Authentication" [ref=e75] [cursor=pointer]:
+          - /url: /login
+        - text: Log in and out of a secure area
+      - listitem "Form Validation - HTML5 validation in the browser and errors that come back from the server" [ref=e76]:
+        - link "Form Validation" [ref=e77] [cursor=pointer]:
+          - /url: /form_validation
+        - text: HTML5 validation in the browser and errors that come back from the server
+      - listitem "Frames - Nested frames and an iframe with an editor" [ref=e78]:
+        - link "Frames" [ref=e79] [cursor=pointer]:
+          - /url: /frames
+        - text: Nested frames and an iframe with an editor
+      - listitem "Geolocation - Show the browser's location" [ref=e80]:
+        - link "Geolocation" [ref=e81] [cursor=pointer]:
+          - /url: /geolocation
+        - text: Show the browser's location
+      - listitem "Horizontal Slider - Move a range slider with the mouse or keys" [ref=e82]:
+        - link "Horizontal Slider" [ref=e83] [cursor=pointer]:
+          - /url: /horizontal_slider
+        - text: Move a range slider with the mouse or keys
+      - listitem "Hovers - Captions that show on mouse hover" [ref=e84]:
+        - link "Hovers" [ref=e85] [cursor=pointer]:
+          - /url: /hovers
+        - text: Captions that show on mouse hover
+      - listitem "Infinite Scroll - Content that loads as you scroll" [ref=e86]:
+        - link "Infinite Scroll" [ref=e87] [cursor=pointer]:
+          - /url: /infinite_scroll
+        - text: Content that loads as you scroll
+      - listitem "Inputs - A number input field" [ref=e88]:
+        - link "Inputs" [ref=e89] [cursor=pointer]:
+          - /url: /inputs
+        - text: A number input field
+      - listitem "JQuery UI Menus - Nested menu built with jQuery UI" [ref=e90]:
+        - link "JQuery UI Menus" [ref=e91] [cursor=pointer]:
+          - /url: /jqueryui/menu
+        - text: Nested menu built with jQuery UI
+      - listitem "JavaScript Alerts - Handle JavaScript alert / confirm / prompt dialogs" [ref=e92]:
+        - link "JavaScript Alerts" [ref=e93] [cursor=pointer]:
+          - /url: /javascript_alerts
+        - text: Handle JavaScript alert / confirm / prompt dialogs
+      - listitem "JavaScript onload event error - A page that throws a JavaScript error when it loads" [ref=e94]:
+        - link "JavaScript onload event error" [ref=e95] [cursor=pointer]:
+          - /url: /javascript_error
+        - text: A page that throws a JavaScript error when it loads
+      - listitem "Key Presses - Shows the last key you pressed" [ref=e96]:
+        - link "Key Presses" [ref=e97] [cursor=pointer]:
+          - /url: /key_presses
+        - text: Shows the last key you pressed
+      - listitem "Large & Deep DOM - Deeply nested elements and a big table" [ref=e98]:
+        - link "Large & Deep DOM" [ref=e99] [cursor=pointer]:
+          - /url: /large
+        - text: Deeply nested elements and a big table
+      - listitem "Large Form - A long form with many field types" [ref=e100]:
+        - link "Large Form" [ref=e101] [cursor=pointer]:
+          - /url: /large_form
+        - text: A long form with many field types
+      - listitem "Live Updates - Updates pushed by the server with Server-Sent Events" [ref=e102]:
+        - link "Live Updates" [ref=e103] [cursor=pointer]:
+          - /url: /live_updates
+        - text: Updates pushed by the server with Server-Sent Events
+      - listitem "Locale & Time Zone - Content in the language your browser asks for / dates and numbers in your locale and time zone" [ref=e104]:
+        - link "Locale & Time Zone" [ref=e105] [cursor=pointer]:
+          - /url: /locale
+        - text: Content in the language your browser asks for / dates and numbers in your locale and time zone
+      - listitem "Modern File Download - Downloads made with Blob / fetch and data URLs / and Content-Disposition quirks" [ref=e106]:
+        - link "Modern File Download" [ref=e107] [cursor=pointer]:
+          - /url: /download_modern
+        - text: Downloads made with Blob / fetch and data URLs / and Content-Disposition quirks
+      - listitem "Multiple Select Dropdown - A select list that allows many options" [ref=e108]:
+        - link "Multiple Select Dropdown" [ref=e109] [cursor=pointer]:
+          - /url: /multiple_dropdown
+        - text: A select list that allows many options
+      - listitem "Multiple Windows - A link that opens a new window" [ref=e110]:
+        - link "Multiple Windows" [ref=e111] [cursor=pointer]:
+          - /url: /windows
+        - text: A link that opens a new window
+      - listitem "Native Dialog - Modal and non-modal <dialog> elements with Escape and focus handling" [ref=e112]:
+        - link "Native Dialog" [ref=e113] [cursor=pointer]:
+          - /url: /dialog
+        - text: Modal and non-modal <dialog> elements with Escape and focus handling
+      - listitem "Nested Frames - Frames inside frames" [ref=e114]:
+        - link "Nested Frames" [ref=e115] [cursor=pointer]:
+          - /url: /nested_frames
+        - text: Frames inside frames
+      - listitem "Network & Console - Requests / console messages / a JavaScript error and a CSP violation to catch with Selenium BiDi" [ref=e116]:
+        - link "Network & Console" [ref=e117] [cursor=pointer]:
+          - /url: /network_console
+        - text: Requests / console messages / a JavaScript error and a CSP violation to catch with Selenium BiDi
+      - listitem "Notification Messages - A flash message that changes on each click" [ref=e118]:
+        - link "Notification Messages" [ref=e119] [cursor=pointer]:
+          - /url: /notification_message
+        - text: A flash message that changes on each click
+      - listitem "Pointer Events - Sort a list / swipe and long-press with pointer events instead of HTML5 drag and drop" [ref=e120]:
+        - link "Pointer Events" [ref=e121] [cursor=pointer]:
+          - /url: /pointer_events
+        - text: Sort a list / swipe and long-press with pointer events instead of HTML5 drag and drop
+      - listitem "Radio Buttons - Pick one option per group" [ref=e122]:
+        - link "Radio Buttons" [ref=e123] [cursor=pointer]:
+          - /url: /radio_buttons
+        - text: Pick one option per group
+      - listitem "Read-only Inputs - Fields you can read but not change" [ref=e124]:
+        - link "Read-only Inputs" [ref=e125] [cursor=pointer]:
+          - /url: /readonly
+        - text: Fields you can read but not change
+      - listitem "Redirect Link - A link that redirects to another page" [ref=e126]:
+        - link "Redirect Link" [ref=e127] [cursor=pointer]:
+          - /url: /redirector
+        - text: A link that redirects to another page
+      - listitem "Responsive Layout - A menu that turns into a hamburger button on narrow screens" [ref=e128]:
+        - link "Responsive Layout" [ref=e129] [cursor=pointer]:
+          - /url: /responsive
+        - text: A menu that turns into a hamburger button on narrow screens
+      - listitem "SPA Routing - A single-page app that changes the URL with the History API" [ref=e130]:
+        - link "SPA Routing" [ref=e131] [cursor=pointer]:
+          - /url: /spa
+        - text: A single-page app that changes the URL with the History API
+      - listitem "SVG - Click and read shapes and text inside an inline SVG chart" [ref=e132]:
+        - link "SVG" [ref=e133] [cursor=pointer]:
+          - /url: /svg
+        - text: Click and read shapes and text inside an inline SVG chart
+      - listitem "Secure File Download - Downloads behind basic auth" [ref=e134]:
+        - link "Secure File Download" [ref=e135] [cursor=pointer]:
+          - /url: /download_secure
+        - text: Downloads behind basic auth
+      - listitem "Shadow DOM - Content inside shadow roots and slots" [ref=e136]:
+        - link "Shadow DOM" [ref=e137] [cursor=pointer]:
+          - /url: /shadowdom
+        - text: Content inside shadow roots and slots
+      - listitem "Shifting Content - Elements that move between page loads" [ref=e138]:
+        - link "Shifting Content" [ref=e139] [cursor=pointer]:
+          - /url: /shifting_content
+        - text: Elements that move between page loads
+      - listitem "Slow & Failing API - Calls to an API with a delay and 429 / 500 errors you choose / and a retry" [ref=e140]:
+        - link "Slow & Failing API" [ref=e141] [cursor=pointer]:
+          - /url: /slow_api
+        - text: Calls to an API with a delay and 429 / 500 errors you choose / and a retry
+      - listitem "Slow Resources - A request that takes 30 seconds to finish" [ref=e142]:
+        - link "Slow Resources" [ref=e143] [cursor=pointer]:
+          - /url: /slow
+        - text: A request that takes 30 seconds to finish
+      - listitem "Sortable Data Tables - Tables you can sort by column" [ref=e144]:
+        - link "Sortable Data Tables" [ref=e145] [cursor=pointer]:
+          - /url: /tables
+        - text: Tables you can sort by column
+      - listitem "Stale Element - A list that is rebuilt on a timer or a click so old element references go stale" [ref=e146]:
+        - link "Stale Element" [ref=e147] [cursor=pointer]:
+          - /url: /stale_element
+        - text: A list that is rebuilt on a timer or a click so old element references go stale
+      - listitem "Status Codes - Pages that answer 200 / 301 / 404 / 500" [ref=e148]:
+        - link "Status Codes" [ref=e149] [cursor=pointer]:
+          - /url: /status_codes
+        - text: Pages that answer 200 / 301 / 404 / 500
+      - listitem "Subdirectories - Pages in nested folders" [ref=e150]:
+        - link "Subdirectories" [ref=e151] [cursor=pointer]:
+          - /url: /subdirectories
+        - text: Pages in nested folders
+      - listitem "Toasts - Notifications that hide themselves after a set time" [ref=e152]:
+        - link "Toasts" [ref=e153] [cursor=pointer]:
+          - /url: /toasts
+        - text: Notifications that hide themselves after a set time
+      - 'listitem "Two-Factor Login (user: tomsmith / pass: SuperSecretPassword!) - Log in with a password and a one-time code" [ref=e154]':
+        - link "Two-Factor Login" [ref=e155] [cursor=pointer]:
+          - /url: /two_factor
+        - text: "(user: tomsmith / pass: SuperSecretPassword!) Log in with a password and a one-time code"
+      - listitem "Typos - Text that sometimes has a typo" [ref=e156]:
+        - link "Typos" [ref=e157] [cursor=pointer]:
+          - /url: /typos
+        - text: Text that sometimes has a typo
+      - listitem "Virtualized List - A list of 10000 rows where only the visible rows exist in the DOM" [ref=e158]:
+        - link "Virtualized List" [ref=e159] [cursor=pointer]:
+          - /url: /virtual_list
+        - text: A list of 10000 rows where only the visible rows exist in the DOM
+      - listitem "Visual Differences - A card with small changes you turn on in the URL for visual testing" [ref=e160]:
+        - link "Visual Differences" [ref=e161] [cursor=pointer]:
+          - /url: /visual_diff
+        - text: A card with small changes you turn on in the URL for visual testing
+      - listitem "WYSIWYG Editor - A rich text editor inside an iframe" [ref=e162]:
+        - link "WYSIWYG Editor" [ref=e163] [cursor=pointer]:
+          - /url: /tinymce
+        - text: A rich text editor inside an iframe
+      - listitem "WebSocket - A chat-style page that sends messages over a WebSocket and shows the echo" [ref=e164]:
+        - link "WebSocket" [ref=e165] [cursor=pointer]:
+          - /url: /websocket
+        - text: A chat-style page that sends messages over a WebSocket and shows the echo
+  - contentinfo [ref=e166]:
+    - generic [ref=e168]:
+      - text: Powered by
+      - link "Elemental Selenium" [ref=e169] [cursor=pointer]:
+        - /url: https://elementalselenium.com/
+      - text: and
+      - link "Sauce Labs" [ref=e170] [cursor=pointer]:
+        - /url: https://saucelabs.com/

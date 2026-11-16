@@ -1,0 +1,14 @@
+{
+"STATUSCODES" : {
+
+    "success" : 200,
+    "validationError": 700
+},
+"REQ_RES_ENPOINTS" : {
+    "GET_USERS_LIST" : "/users?page=2",
+    "POST_CREATE_USER" : "/users"
+}
+
+
+
+}

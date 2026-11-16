@@ -1,0 +1,20 @@
+- generic [active] [ref=f1e1]:
+  - link "Skip to content" [ref=f1e2] [cursor=pointer]:
+    - /url: "#content"
+  - 'link "The Internet: home" [ref=f1e3] [cursor=pointer]':
+    - /url: /
+    - text: The Internet powered by Sauce Labs
+  - region "Messages" [ref=f1e5]
+  - main [ref=f1e7]:
+    - generic [ref=f1e8]:
+      - heading "Opening a new window" [level=3] [ref=f1e9]
+      - link "Click Here" [ref=f1e10] [cursor=pointer]:
+        - /url: /windows/new
+  - contentinfo [ref=f1e11]:
+    - generic [ref=f1e13]:
+      - text: Powered by
+      - link "Elemental Selenium" [ref=f1e14] [cursor=pointer]:
+        - /url: https://elementalselenium.com/
+      - text: and
+      - link "Sauce Labs" [ref=f1e15] [cursor=pointer]:
+        - /url: https://saucelabs.com/
