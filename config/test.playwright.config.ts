@@ -1,8 +1,7 @@
 import { baseConfig } from '../playwright.config.ts';
 import { defineConfig } from '@playwright/test';
 import { EnvConfig } from '../tests/helpers/config-fixtures.ts';
-import path from 'path/win32';
-
+import path from 'node:path';
 export default defineConfig<EnvConfig>({
 
     ...baseConfig,//load the base config and override the required values uding use   
