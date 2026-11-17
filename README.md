@@ -1,30 +1,21 @@
-# Playwright Installation
+1. Playwright Test Agents - Installation
+Pre-Check
 
-## Steps
-1. **Check if Node.js is installed:**
-```sh
-node -v
-```
-- Returns a valid node version (e.g. `v22.16.0`). If not, install Node.js first.
+✅ VS Code version (> 1.105.0 ) -> Update if required
+✅ Check playwright version - good to have it latest
+npx playwright --version # Returns current version
+npm view playwright version # Returns latest version
 
-2. **Navigate to your project directory:**
-```sh
-cd /path/to/your/project
-```
+✅ Update playwright (recommended)
+npm install -D @playwright/test@latest
+npx playwright install
 
-3. **Initialize Playwright:**
-```sh
-✅npm init playwright@latest
-```
-- When prompted:
-  - Select `TypeScript` as the language
-  - Choose to install **all browsers**
+Installation Steps
 
-4. **Verify Playwright installation:**
-```sh
-✅npx playwright --version
-```
-Version 1.61.0
-- Shows the installed Playwright version.
-
----npx playwright test
+Run npx playwright init-agents --loop=vscode
+Check the generated files
+Done !🎉
+1.1. Ref:
+Updating Playwright
+Playwright Agents
+Agents md
